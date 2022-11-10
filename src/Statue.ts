@@ -17,7 +17,7 @@ export class Statue implements Artwork{
         return this.title;
     }
     getPrice(): number {
-        return this.year;
+        return this.price;
     }
     getYear(): number {
         return this.year;

@@ -11,7 +11,7 @@ function Art(){
     let year=parseInt((document.getElementById('ev')as HTMLInputElement).value);
     let price=parseInt((document.getElementById('ar')as HTMLInputElement).value);
     let height=parseInt((document.getElementById('magassag')as HTMLInputElement).value);
-    console.log(/[a-zA-Z-]/gm.test(title));
+    //console.log(/[a-zA-Z-]/gm.test(title));
     // let st_price=""+price;
     // console.log(/^[1-9]/gm.test(st_price))
     if(Validate(title,year,price,height)==true){
@@ -21,8 +21,16 @@ function Art(){
         (document.getElementById('magassag')as HTMLInputElement).value="";
         (document.getElementById('ev')as HTMLInputElement).value="";
         (document.getElementById('ar')as HTMLInputElement).value="";
+        (document.getElementById('count')as HTMLElement).textContent=statueArray.length+" db";
+
+    let price_sum:number=0;
+    for(let i=0;i<statueArray.length;i++){
+        price_sum+=statueArray[i].getPrice();
     }
-  
+    (document.getElementById('price_sum')as HTMLElement).textContent=price_sum+" Ft";
+    }
+    
+    
 }
 
 

@@ -12,7 +12,7 @@ class Statue {
         return this.title;
     }
     getPrice() {
-        return this.year;
+        return this.price;
     }
     getYear() {
         return this.year;
