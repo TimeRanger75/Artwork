@@ -7,8 +7,21 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
-<body>
-    <p>This is a template</p>    
-    <script src='main.js'></script>
+<body>  
+    <script src='main.js' defer></script>
+    <h1>Szobrok</h1>
+    <label for="szobor">Szobor neve: </label>
+    <input type="text" name="szobor" id="szobor">
+    <br>
+    <label for="ev">Készítés éve: </label>
+    <input type="number" name="ev" id="ev" min="1">
+    <br>
+    <label for="magassag">Magassága: </label>
+    <input type="number" name="magassag" id="magassag">
+    <br>
+    <label for="ar">Ára: </label>
+    <input type="number" name="ar" id="ar">
+    <br>
+    <button id="btnFelvesz">Felvesz</button>
 </body>
 </html>
